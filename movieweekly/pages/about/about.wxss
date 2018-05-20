@@ -1,4 +1,20 @@
-.info {
+
+
+.movie-header {
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+}
+
+.big-title {
   font-weight: bold;
-  font-size: 60rpx;
+  font-size: 50rpx;
+  color: #7ef2a3;
+}
+
+.nav-defalut {
+  color: blue;
+}
+.nav-hover {
+  color: red;
 }

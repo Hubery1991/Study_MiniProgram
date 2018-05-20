@@ -1,0 +1,6 @@
+<view class='container'>
+  <text>每周推荐</text>
+  <image src='../../resource/image/fuchouzhe3.jpg'></image>
+  <text>小海</text>
+  <text>点评：超级美国大片，值得一看！</text>
+</view>

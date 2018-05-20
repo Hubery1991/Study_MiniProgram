@@ -1,5 +1,23 @@
 {
  "pages": [
-   "pages/about/about"
- ]
+   "pages/about/about",
+   "pages/weekly/weekly"
+ ],
+ "tabBar": {
+   "list": [{
+     "pagePath": "pages/about/about",
+     "text": "关于",
+     "iconPath": "resource/icons/icon_home.png",
+     "selectedIconPath": "resource/icons/icon_home_HL.png"
+   },
+   {
+     "pagePath": "pages/weekly/weekly",
+     "text": "每日",
+     "iconPath": "resource/icons/icon_mine.png",
+     "selectedIconPath": "resource/icons/icon_mine_HL.png"
+   }],
+    "selectedColor": "#d90e3d",
+    "color": "#888888",
+    "borderStyle": "black"
+ }
 }

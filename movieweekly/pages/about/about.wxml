@@ -1,1 +1,10 @@
-<text class="info">Hello World</text>
+<view class="container">
+  <image class="movie-header" src="../../resource/image/fuchouzhe3.jpg"></image>
+  <text class="big-title">电影周周看</text>
+  <view>
+    <text>我</text>
+    <navigator class='nav-defalut' style='display: inline;' url='../weekly/weekly' open-type='navigate' hover-class='nav-hover'>每周推荐</navigator>
+    <text>一部好看的影片</text>
+  </view>
+  <text>复仇者联盟3</text>
+</view>
