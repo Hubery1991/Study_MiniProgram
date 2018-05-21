@@ -1,0 +1,20 @@
+/* pages/movie/movielist.wxss */
+.movie-view {
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.movie-banner {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 500rpx;
+  height: 250rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/movie/movielist.wxml-->
+<view class='container'>
+  <view class='movie-view' wx:for='{{movieList}}'>
+    <image class='movie-banner' src='{{item.banner}}'></image>
+    <view class='movie-content'>
+      <text>{{item.name}}</text>
+      <text>导演:{{item.actor}}</text>
+      <text>超级精彩的电影值得一看，大家一定要去看看哦！</text>
+    </view>
+  </view>
+</view>

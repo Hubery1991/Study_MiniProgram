@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    thisWeekMovie: {
+      name: '复仇者联盟3',
+      comment: '最精彩的电影，值得一看',
+      imagePath: '../../resource/image/fuchouzhe3.jpg',
+      score: 90,
+      isHighlyRecommand: true
+    },
+
   },
 
   /**

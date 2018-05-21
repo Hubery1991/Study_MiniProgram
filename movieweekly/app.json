@@ -1,7 +1,8 @@
 {
  "pages": [
    "pages/about/about",
-   "pages/weekly/weekly"
+   "pages/weekly/weekly",
+   "pages/movie/movielist"
  ],
  "tabBar": {
    "list": [{
@@ -15,9 +16,23 @@
      "text": "每日",
      "iconPath": "resource/icons/icon_mine.png",
      "selectedIconPath": "resource/icons/icon_mine_HL.png"
-   }],
+   },
+   {
+    "pagePath": "pages/movie/movielist",
+    "text": "电影列表",
+    "iconPath": "resource/icons/icon_mine.png",
+    "selectedIconPath": "resource/icons/icon_mine_HL.png"
+  }],
     "selectedColor": "#d90e3d",
     "color": "#888888",
     "borderStyle": "black"
+ },
+ "window": {
+  "navigationBarBackgroundColor": "#d90e3d",
+  "navigationBarTextStyle": "black",
+   "navigationBarTitleText": "小程序",
+   "backgroundColor": "#eeeeee",
+   "backgroundTextStyle": "light",
+   "enablePullDownRefresh": false
  }
 }
