@@ -1,11 +1,22 @@
 <!--pages/movie/movielist.wxml-->
-<view class='container'>
-  <view class='movie-view' wx:for='{{movieList}}'>
+<view class=''>
+  <!-- <view class='movie-view' wx:for='{{movieList}}'>
     <image class='movie-banner' src='{{item.banner}}'></image>
     <view class='movie-content'>
       <text>{{item.name}}</text>
       <text>导演:{{item.actor}}</text>
       <text>超级精彩的电影值得一看，大家一定要去看看哦！</text>
     </view>
-  </view>
+  </view> -->
+  <swiper class='movie-swiper' indicator-dots='{{true}}' previous-margin='50rpx' next-margin='50rpx' current='{{currentPageIndex}}' autoplay='{{true}}'>
+    <swiper-item class='movie-view' wx:for='{{movieList}}'>
+      <image class='movie-banner' src='{{item.banner}}'></image>
+      <!-- <view class='movie-content'> -->
+        <text>{{item.name}}</text>
+        <text>导演:{{item.actor}}</text>
+        <text>超级精彩的电影值得一看，大家一定要去看看哦！</text>
+        <text wx:if='{{index !== movieList.length-1}}' bindtap='backMovieRecommandPage'>返回最后一页</text>
+      <!-- </view> -->
+    </swiper-item>
+  </swiper>
 </view>

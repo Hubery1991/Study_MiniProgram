@@ -9,21 +9,24 @@ Page({
       { 'name': '复仇者联盟1', 'actor': '小海', 'banner': '../../resource/image/fuchouzhe3.jpg' },
       { 'name': '复仇者联盟2', 'actor': '小海', 'banner': '../../resource/image/fuchouzhe3.jpg' },
       { 'name': '复仇者联盟3', 'actor': '小海', 'banner': '../../resource/image/fuchouzhe3.jpg' },
-      { 'name': '复仇者联盟4', 'actor': '小海', 'banner': '../../resource/image/fuchouzhe3.jpg' }]
+      { 'name': '复仇者联盟4', 'actor': '小海', 'banner': '../../resource/image/fuchouzhe3.jpg' }],
+      currentPageIndex:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      currentPageIndex: this.data.movieList.length - 1
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
@@ -66,5 +69,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  backMovieRecommandPage: function () {
+    this.setData({
+      currentPageIndex: this.data.movieList.length-1
+    })
   }
 })
